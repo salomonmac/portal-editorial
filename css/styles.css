@@ -79,9 +79,6 @@ ul.dropdown-menu a:hover{                            /* clase para  menús*/
     color: #333;
 }
 
-div.collapse li {
-    border-right: 1px solid #ededed;
-}
 
 li {
     font-weight: bold;
@@ -181,7 +178,7 @@ li {
         display: none!important;
     }
     .navbar-nav {
-        float: none!important;
+        
         margin-top: 7.5px;
     }
     .navbar-nav>li {
