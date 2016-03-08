@@ -57,10 +57,11 @@ body {
 .navbar-inverse .navbar-nav > li > a:hover {
     color: #f42434;
     transition-duration: .4s;
+   
 }
 
 li {
-    border-right: 1px #999 solid;
+   
     text-shadow: none !important;
     font-size: 12px;
 }
@@ -75,15 +76,29 @@ li {
         border-right: none;
         height: 0;
     }
-    li {
+   .resp > li {
         border-right: none;
         text-shadow: none !important;
         font-size: 12px;
         border-right: 1px #999 solid;
     }
-    .nav > li > a {
-        position: relative;
-        display: block;
-        padding: 15px 6px 15px 6px;
-    }
+
+}
+
+.icono-collaps {
+       float:none !important; 
+       border-color:#454545 !important;
+       
+}
+
+.resp {
+    
+}
+
+.resp1 {
+    
+    padding: 0px 12px 0px 12px;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #454545;
 }
