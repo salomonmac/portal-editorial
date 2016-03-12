@@ -1,34 +1,33 @@
-ul.menu_w a:hover {                             /*menu_w para menú principal*/
+
+ul.menu_principal a:hover {
+    /*menu_w para menú principal*/
     background-color: #333 !important;
     transition-duration: 1s;
     color: white !important;
 }
 
-#id-plus{                            /*flota el botón de submenú a la derecha*/
-    float:right;
+#id-plus {
+    /*flota el botón de submenú a la derecha*/
+    float: right;
 }
 
-.dropdown-menu {                            /* clase para los menús */
+.dropdown-menu {
+    /* clase para los menús */
     display: none;
     visibility: hidden;
 }
 
-ul.dropdown-menu a:hover{                            /* clase para  menús*/
+ul.dropdown-menu a:hover {
+    /* clase para  menús*/
     background: none;
-}
-
-#navbar-collapse-1 {
-    visibility: hidden;
-    clear: both;
-    float: left;
-    margin: 10px auto 5px 20px;
-    width: 30%;
-    display: none !important;
 }
 
 #tabla-container {
     background: rgba(0, 0, 0, 0.9);
     visibility: visible;
+}
+#submenu_toggle{
+    position: static;
 }
 
 .table tr {
@@ -54,9 +53,9 @@ ul.dropdown-menu a:hover{                            /* clase para  menús*/
 .table>thead>tr>th {
     border-bottom: 1px solid grey;
     font-weight: bold;
-}<link rel="stylesheet" href="css/style_footer.css"
+}
 
-.table>tfoot>tr>td,
+<link rel="stylesheet" href="css/style_footer.css" .table>tfoot>tr>td,
 .table>tfoot>tr>th {
     border-bottom: 1px solid grey;
     font-weight: bold;
@@ -72,19 +71,15 @@ ul.dropdown-menu a:hover{                            /* clase para  menús*/
     border-bottom: 3px solid #333;
     border-top: 1px solid #ededed;
     padding: 0px;
-    margin: 0px;<link rel="stylesheet" href="css/style_footer.css"
+    margin: 0px;
+    <link rel="stylesheet" href="css/style_footer.css"
 }
-
-.navbar-default .navbar-nav>li>a {
-    color: #333;
-}
-
 
 li {
     font-weight: bold;
 }
 
-#container-1 {
+#container_fluid_menu_principal {
     padding: 0px;
 }
 
@@ -106,9 +101,9 @@ li {
 
 .navbar-toggle {
     float: left;
-}transition
+}
 
-.menu_w {
+.menu_principal {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -149,22 +144,22 @@ li {
     -moz-border-radius: 3px;
     border-radius: 3px;
     color: #333;
+     z-index: 3;
 }
 
-.search-query:focus + button {
-    z-index: 3;
-}
+
 
 @media (max-width: 1260px) {
+    button.navbar-toggle {
+        /*media se agrega para desaparecer el botón del submenú principal*/
+        display: block !important;
+    }
     .navbar-header {
         float: none;
     }
     .navbar-left,
     .navbar-right {
         float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -178,7 +173,6 @@ li {
         display: none!important;
     }
     .navbar-nav {
-        
         margin-top: 7.5px;
     }
     .navbar-nav>li {
@@ -195,7 +189,7 @@ li {
         float: left;
     }
     #navbar-boxw {
-        float: right
+        float: right;
     }
     #custom-search-input {
         /*is para la barra de busqueda  */
@@ -207,20 +201,23 @@ li {
         float: right;
     }
     #top-nav {
-        visibil.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > tdity: hidden;
+        .table > thead > tr > th,
+        .table > tbody > tr > th,
+        .table > tfoot > tr > th,
+        .table > thead > tr > td,
+        .table > tbody > tr > td,
+        .table > tfoot > tr > td,
+        .table > thead > tr > th,
+        .table > tbody > tr > th,
+        .table > tfoot > tr > th,
+        .table > thead > tr > td,
+        .table > tbody > tr > td,
+        .table > tfoot > tr > tdity: hidden;
         clear: both;
         float: left;
         margin: 10px auto 5px 20px;
-        width: 28%;
         display: none;
-    }
-    #navbar-collapse-1 {
-        visibility: visible;
-        clear: both;
-        float: left;
-        margin: 10px auto 5px 20px;
-        width: 30%;
-        display: inline !important;
+        border: none;
     }
     .dropdown-menu {
         position: inherit;
@@ -228,16 +225,32 @@ li {
         float: left;
         visibility: visible;
     }
+    
 }
 
-.table a{
-	color: white;
+@media (max-width: 408px) {
+         #custom-search-input {
+        /*is para la barra de busqueda  */
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+        width: 100px;
+        height: 30%;
+        float: right;
+    }
 }
 
-.table a:hover{
-	color: red !important;
+.table a {
+    color: white;
 }
+
+.table a:hover {
+    color: red !important;
+}
+
+
 /*Salomon*/
+
 .fondo1 {
     background: #14b1a6;
     padding: 10px;
@@ -257,14 +270,34 @@ li {
     border: 2px dotted white;
     text-align: center;
 }
-h2{
+
+h2 {
     color: white;
 }
+
+
 /*Salomon*/
+
 .espacio {
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.espacio h2{
+
+.espacio h2 {
     color: white;
+}
+
+#lista_menu_principal li {
+    border-right: 1px solid #ededed;
+}
+
+#navbar_main {
+    background-color: white;
+    border: none;
+    border-top: 1px solid #ededed;
+    border-bottom: 3px solid #333;
+}
+
+#lista_menu_principal >li>a {
+    color: #333;
 }
