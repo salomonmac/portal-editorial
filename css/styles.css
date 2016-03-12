@@ -1,4 +1,4 @@
-ul.menu_principal a:hover {                             /*menu_principal para menú principal*/
+ul.menu_w a:hover {                             /*menu_w para menú principal*/
     background-color: #333 !important;
     transition-duration: 1s;
     color: white !important;
@@ -17,6 +17,14 @@ ul.dropdown-menu a:hover{                            /* clase para  menús*/
     background: none;
 }
 
+#navbar-collapse-1 {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 30%;
+    display: none !important;
+}
 
 #tabla-container {
     background: rgba(0, 0, 0, 0.9);
@@ -41,7 +49,6 @@ ul.dropdown-menu a:hover{                            /* clase para  menús*/
 .table>tfoot>tr>th {
     border: 0;
 }
-
 
 .table>thead>tr>td,
 .table>thead>tr>th {
@@ -77,6 +84,9 @@ li {
     font-weight: bold;
 }
 
+#container-1 {
+    padding: 0px;
+}
 
 .form-control {
     color: #333;
@@ -98,9 +108,7 @@ li {
     float: left;
 }transition
 
-
-
-.menu_principal {
+.menu_w {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -147,7 +155,7 @@ li {
     z-index: 3;
 }
 
-@media (max-width: 995px) {
+@media (max-width: 1260px) {
     .navbar-header {
         float: none;
     }
@@ -183,7 +191,9 @@ li {
     .collapse.in {
         display: block !important;
     }
-    
+    #toggle-1 {
+        float: left;
+    }
     #navbar-boxw {
         float: right
     }
@@ -204,7 +214,14 @@ li {
         width: 28%;
         display: none;
     }
-    
+    #navbar-collapse-1 {
+        visibility: visible;
+        clear: both;
+        float: left;
+        margin: 10px auto 5px 20px;
+        width: 30%;
+        display: inline !important;
+    }
     .dropdown-menu {
         position: inherit;
         width: 100%;
@@ -250,7 +267,4 @@ h2{
 }
 .espacio h2{
     color: white;
-}
-#container-fluid_menu_principal{        /*quito el espacio del menú principal que le da por defecto bootstrap*/
-    padding-left: 0px;
 }

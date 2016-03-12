@@ -4294,11 +4294,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-left: -15px;
   }
 }
-.navbar-toggle {                    /*se modifica float hacía la izq     WALTER*/
+.navbar-toggle {
   position: relative;
-  float: left;
+  float: right;
   padding: 9px 10px;
-  margin-top: 0px;                    /*se cambia el margin-top de  ocho a cero WALTER*/
+  margin-top: 8px;
   margin-right: 15px;
   margin-bottom: 8px;
   background-color: transparent;
@@ -4318,7 +4318,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width:  995px) {    /*se cambiarón los pixeles para que se active el boton toggle antes   WALTER*/
+@media (min-width: 768px) {
   .navbar-toggle {
     display: none;
   }
