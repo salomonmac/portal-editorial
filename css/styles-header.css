@@ -50,20 +50,18 @@ body {
     padding: 0;
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav >  .lista > .overscroll{
     color: #fff;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
+.navbar-inverse .navbar-nav >  .lista > .overscroll:hover{
     color: #f42434;
     transition-duration: .4s;
-   
 }
 
-li {
-   
+.lista{
     text-shadow: none !important;
-    font-size: 12px;
+    font-size: 12px
 }
 
 .loggin {
@@ -76,12 +74,12 @@ li {
         border-right: none;
         height: 0;
     }
-   .resp > li {
+   /*.resp > li {
         border-right: none;
         text-shadow: none !important;
         font-size: 12px;
         border-right: 1px #999 solid;
-    }
+    }*/
 
 }
 
@@ -89,10 +87,6 @@ li {
        float:none !important; 
        border-color:#454545 !important;
        
-}
-
-.resp {
-    
 }
 
 .resp1 {
