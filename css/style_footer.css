@@ -48,3 +48,9 @@ footer li {
     background: #282828;
     color: #666666;
 }
+
+@media screen and (max-width: 768px) {
+footer {
+    text-align: center;
+}
+}
