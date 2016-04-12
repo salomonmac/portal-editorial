@@ -54,3 +54,6 @@ footer {
     text-align: center;
 }
 }
+footer > .aire{
+    margin-right: 0px;
+}
