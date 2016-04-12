@@ -8,11 +8,11 @@
     color: white;
 }
     
-ul li{
+/*ul li{
     color: #909090;
-    margin-left: 5%;
+    margin-left: 5%;        
     margin-top: 1em;
-}
+}*/
 
 a:link{
     color: #909090;
@@ -37,6 +37,21 @@ ul li a:hover{
 .espacio {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+
+.carac small{
+    color: #008000;
+}
+.carac {
+        color: #333333;
+}
+.carac h2{
+    color: #f42434;
+}
+
+.carac h4{
+    color: #f42434;
 }
 
 
